@@ -50,3 +50,108 @@
 .footer-inner{border-top:1px solid #ffffff20;padding-top:17px}
 @media(max-width:900px){.forms-layout{grid-template-columns:1fr}.footer-main{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.form-panel{padding:20px}.form-panel .form-grid{grid-template-columns:1fr}.footer-main{grid-template-columns:1fr}.form-panel .form-submit{width:100%}}
+
+
+/* Make all footer contact text consistent */
+.footer-contact .contact-item span,
+.footer-contact .contact-item a {
+    font-family: Arial, sans-serif;
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+/* Keep all contact icons orange */
+
+.footer-contact .contact-item svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #ff8a00;
+  stroke: currentColor;
+  stroke-width: 2;
+  margin-top: 2px;
+}
+
+
+/* Consistent spacing and alignment */
+.footer-contact .contact-item {
+    display: grid;
+    grid-template-columns: 22px minmax(0, 1fr);
+    column-gap: 14px;
+    align-items: start;
+    margin-bottom: 16px;
+}
+
+/* Balance the three footer columns */
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Center the contact section */
+.footer-contact {
+    width: 100%;
+    max-width: 380px;
+    justify-self: center;
+}
+
+/* Align contact icons and text */
+.footer-contact .contact-item {
+    display: grid;
+    grid-template-columns: 22px minmax(0, 1fr);
+    column-gap: 14px;
+    align-items: start;
+    margin-bottom: 16px;
+}
+
+/* Keep text consistent */
+.footer-contact .contact-item span,
+.footer-contact .contact-item a {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Position quick links neatly */
+.footer-links {
+    justify-self: center;
+}
+
+/* Mobile responsive footer */
+@media (max-width: 768px) {
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-contact,
+    .footer-links {
+        justify-self: start;
+    }
+}
+
+.footer-main {
+    align-items: start;
+}
+
+.footer-contact h3,
+.footer-links h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.footer-contact .contact-item {
+    margin-bottom: 12px;
+    column-gap: 12px;
+}
+
+/* Make Contact heading white */
+.footer-contact h3 {
+    color: #ffffff !important;
+}
+
